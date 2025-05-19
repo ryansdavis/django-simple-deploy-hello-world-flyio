@@ -84,16 +84,37 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/cd/1f/63007b0c66bc18a8b60343616fc02f2e997ab312a6a45f4fcc3d9e886ac1/django_simple_deploy-1.0.0-py3-none-any.whl", hash = "sha256:a538e678d38a688c15c0818600bf1047a9f9dafd41f1d636679652e56134eb08", size = 27631 },
 ]
 
+[package.optional-dependencies]
+fly-io = [
+    { name = "dsd-flyio" },
+]
+
 [[package]]
 name = "django-simple-deploy-hello-world-flyio"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
-    { name = "django-simple-deploy" },
+    { name = "django-simple-deploy", extra = ["fly-io"] },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "django-simple-deploy", specifier = ">=1.0.0" }]
+requires-dist = [{ name = "django-simple-deploy", extras = ["fly-io"], specifier = ">=1.0.0" }]
+
+[[package]]
+name = "dsd-flyio"
+version = "1.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "django" },
+    { name = "django-simple-deploy" },
+    { name = "pluggy" },
+    { name = "requests" },
+    { name = "toml" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c3/47/e5bcf557222506f25ec44072d7d367276a79990978b61773c40f118d72a3/dsd_flyio-1.1.0.tar.gz", hash = "sha256:1c331c59b24db7ef4d1b4257a73a19be4bd49445fb4602f4aca36edabd966a4d", size = 15276 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ec/5a/2e15e4c32ee86ffe3096ee61d875a2b485b7b39544bf9283af27d1c2baae/dsd_flyio-1.1.0-py3-none-any.whl", hash = "sha256:58719f36ddc17eabf9f06bf48147a5ed81025fc15f31e59706a41e27cb8b6bca", size = 17598 },
+]
 
 [[package]]
 name = "idna"
