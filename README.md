@@ -76,3 +76,19 @@ uv run test_deployed_app_functionality.py --url https://cool-app-bro.fly.dev/
 works! 
 
 There is no way to automatically destroy cloud resources by design (intended audience may delete important data)
+```
+ryan_s_davis@Ryans-MacBook-Pro:~/Desktop/git_repos/django-simple-deploy-hello-world-flyio$ fly apps list
+NAME            OWNER           STATUS          LATEST DEPLOY
+cool-app-bro    personal        deployed        53m32s ago
+cool-app-bro-db personal        deployed
+
+ryan_s_davis@Ryans-MacBook-Pro:~/Desktop/git_repos/django-simple-deploy-hello-world-flyio$ fly apps destroy cool-app-bro cool-app-bro-db
+Destroying an app is not reversible.
+? Destroy app cool-app-bro? Yes
+Destroyed app cool-app-bro
+Destroying an app is not reversible.
+? Destroy app cool-app-bro-db? Yes
+Destroyed app cool-app-bro-db
+
+```
+
