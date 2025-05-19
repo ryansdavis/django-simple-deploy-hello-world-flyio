@@ -68,3 +68,11 @@ To deploy your project, you will need to:
 
 - You can find a full record of this configuration in the dsd_logs directory.
 ```
+
+
+```
+uv run test_deployed_app_functionality.py --url https://cool-app-bro.fly.dev/
+```
+works! 
+
+There is no way to automatically destroy cloud resources by design (intended audience may delete important data)
