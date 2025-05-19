@@ -1,0 +1,50 @@
+2025-05-19 14:17:16,581 INFO: Logging run of `manage.py deploy`...
+2025-05-19 14:17:16,582 INFO: Created /Users/ryan_s_davis/Desktop/git_repos/django-simple-deploy-hello-world-flyio/dsd_logs/dsd_2025-05-19-141716.log.
+2025-05-19 14:17:16,582 INFO: 
+2025-05-19 14:17:16,582 INFO: CLI args:
+2025-05-19 14:17:16,582 INFO:   verbosity: 1
+2025-05-19 14:17:16,582 INFO:   settings: None
+2025-05-19 14:17:16,582 INFO:   pythonpath: None
+2025-05-19 14:17:16,582 INFO:   traceback: False
+2025-05-19 14:17:16,582 INFO:   no_color: False
+2025-05-19 14:17:16,582 INFO:   force_color: False
+2025-05-19 14:17:16,582 INFO:   automate_all: False
+2025-05-19 14:17:16,582 INFO:   no_logging: False
+2025-05-19 14:17:16,582 INFO:   ignore_unclean_git: False
+2025-05-19 14:17:16,582 INFO:   deployed_project_name: 
+2025-05-19 14:17:16,582 INFO:   region: us-3.platform.sh
+2025-05-19 14:17:16,582 INFO:   unit_testing: False
+2025-05-19 14:17:16,582 INFO:   e2e_testing: False
+2025-05-19 14:17:16,595 INFO:   Using plugin: dsd_flyio
+2025-05-19 14:17:17,055 INFO: 
+2025-05-19 14:17:17,055 INFO: Deployment target: Fly.io
+2025-05-19 14:17:17,055 INFO: Local platform identified: macOS
+2025-05-19 14:17:17,055 INFO: Local project name: blog
+2025-05-19 14:17:17,055 INFO: Project root: /Users/ryan_s_davis/Desktop/git_repos/django-simple-deploy-hello-world-flyio
+2025-05-19 14:17:17,056 INFO: Found .git dir at /Users/ryan_s_davis/Desktop/git_repos/django-simple-deploy-hello-world-flyio.
+2025-05-19 14:17:17,056 INFO: 
+2025-05-19 14:17:17,056 INFO: git status --porcelain
+2025-05-19 14:17:17,064 INFO: ?? blog/
+2025-05-19 14:17:17,064 INFO: ?? blogs/
+2025-05-19 14:17:17,064 INFO: ?? dsd_logs/
+2025-05-19 14:17:17,064 INFO: ?? manage.py
+2025-05-19 14:17:17,065 INFO: ?? requirements.in
+2025-05-19 14:17:17,065 INFO: ?? requirements.txt
+2025-05-19 14:17:17,065 INFO: ?? reset_project.py
+2025-05-19 14:17:17,065 INFO: ?? test_deployed_app_functionality.py
+2025-05-19 14:17:17,065 INFO: ?? users/
+2025-05-19 14:17:17,065 INFO: 
+2025-05-19 14:17:17,065 INFO: git diff --unified=0
+2025-05-19 14:17:17,072 INFO: 
+2025-05-19 14:17:17,072 INFO: 
+2025-05-19 14:17:17,072 INFO: DSDCommandError:
+2025-05-19 14:17:17,072 INFO: 
+2025-05-19 14:17:17,072 INFO: The output of `git status` indicates that you have uncommitted changes.
+2025-05-19 14:17:17,072 INFO: 
+2025-05-19 14:17:17,072 INFO: We highly recommend you commit all changes before running the deploy command,
+2025-05-19 14:17:17,072 INFO: so you can easily undo configuration changes if deployment doesn't work, or if
+2025-05-19 14:17:17,072 INFO: you wish to deploy to a different platform.
+2025-05-19 14:17:17,072 INFO: 
+2025-05-19 14:17:17,072 INFO: Please commit all changes and then run the deploy command again. If you really
+2025-05-19 14:17:17,073 INFO: wish to continue without committing current changes, you can use
+2025-05-19 14:17:17,073 INFO: the --ignore-unclean-git flag.
